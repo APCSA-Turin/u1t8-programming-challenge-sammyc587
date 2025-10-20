@@ -17,12 +17,12 @@ public class Student {
  
     // returns firstName
     public String getFirstName() {
-        return "firstName";
+        return firstName;
     }
  
     // returns lastName
     public String getLastName() {
-        return "lastName";
+        return lastName;
     }
  
     public double getHighestTestScore() {
@@ -50,6 +50,7 @@ public class Student {
     // set new highest test score 
     public void addTestScore(double newTestScore) {
         accumulatedTestScores = newTestScore + accumulatedTestScores;
+        highestTestScore = newTestScore;
         testScoreCount++;
         
     }
